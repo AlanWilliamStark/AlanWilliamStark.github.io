@@ -4,6 +4,8 @@
 
 # [图论概念整理（按课时）](pages/概念整理(按课时).md)
 
+# [GT and OR2.PDF](pages/GT and OR2.PDF)
+
 You can use the [editor on GitHub](https://github.com/AlanWilliamStark/AlanWilliamStark.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
