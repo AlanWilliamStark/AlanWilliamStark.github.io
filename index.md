@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## 杨文峰的个人主页
 
 # [TensorFlow](pages/TensorFlow1x.md)
