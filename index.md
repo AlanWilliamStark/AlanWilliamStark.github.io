@@ -4,9 +4,9 @@ layout: default
 
 ## 杨文峰的个人主页
 
-# [TensorFlow](pages/TensorFlow1x.md)
+# [TensorFlow](pages/TensorFlow1x.html)
 
-# [图论概念整理（按课时）](pages/概念整理(按课时).md)
+# [图论概念整理（按课时）](pages/概念整理(按课时).html)
 
 # [GT and OR2.PDF](pages/GT and OR2.PDF)
 
