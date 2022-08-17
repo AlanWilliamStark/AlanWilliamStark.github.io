@@ -2,13 +2,17 @@
 layout: default
 ---
 
-## 杨文峰的个人主页
+## 杨文峰的个人主页index
 
 # [TensorFlow](pages/TensorFlow1x.html)
 
 # [图论概念整理（按课时）](pages/概念整理(按课时).html)
 
+# [图论概念整理（按知识结构）](/pages/概念整理(按知识结构).md)
+
 # [GT and OR2.PDF](pages/GT and OR2.PDF)
+
+[运筹学笔记清华大学.md](运筹学笔记清华大学.md)
 
 You can use the [editor on GitHub](https://github.com/AlanWilliamStark/AlanWilliamStark.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
