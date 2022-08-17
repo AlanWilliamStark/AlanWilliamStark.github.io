@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # TensorFlowd的基础使用
 
 ## Tensorflow基本概念
@@ -6,7 +10,7 @@
  - 使用tensor表示数据
  - 通过变量（Variable）维护状态
  - 使用feed和fetch可以为任意的操作赋值或者从其中获取数据
- 
+
 Tensorflow是一个编程系统，使用图（graphs）来表示计算任务，图（graphs）中的节点称之为op（operation），一个op获得0个或多个Tensor，执行计算，产生0个或多个Tensor。Tensor看作是一个n维的数组或列表。图必须在会话（Session）里被启动。
 
 ## Tensorflow结构
@@ -42,7 +46,7 @@ print(product)
     [[2]
      [3]]
     Tensor("MatMul_2:0", shape=(1, 1), dtype=int32)
-    
+
 
 
 ```python
@@ -56,7 +60,7 @@ sess.close()
 ```
 
     [[15]]
-    
+
 
 
 ```python
@@ -66,7 +70,7 @@ with tf.Session() as sess:
 ```
 
     [[15]]
-    
+
 
 ## 变量
 
@@ -98,7 +102,7 @@ with tf.Session() as sess:
 
     [-2 -1]
     [-1  1]
-    
+
 
 
 ```python
@@ -152,7 +156,7 @@ print(add)
 
     Tensor("Sub_9:0", shape=(2,), dtype=int32)
     Tensor("Add_13:0", shape=(2,), dtype=int32)
-    
+
 
 ## Fetch and Feed
 
@@ -179,7 +183,7 @@ with tf.Session() as sess:
 ```
 
     [21.0, 7.0]
-    
+
 
 
 ```python
@@ -195,7 +199,7 @@ with tf.Session() as sess:
 ```
 
     [14.]
-    
+
 
 ## Tensorflow 简单示例 一元线性回归
 
@@ -345,7 +349,7 @@ with tf.Session() as sess:
     9800 [3.991639, 11.266247]
     9900 [3.991639, 11.266247]
     10000 [3.991639, 11.266247]
-    
+
 
 # 非线性回归
 
@@ -409,10 +413,10 @@ with tf.Session() as sess:
 ```
 
     100%|████████████████████████████████████████████████████████████████████████████| 5000/5000 [00:02<00:00, 2150.88it/s]
-    
 
 
-    
+
+
 ![png](output_24_1.png)
     
 
@@ -446,7 +450,7 @@ from tqdm import tqdm
     WARNING:tensorflow:From D:\DEV\ANACONDA\envs\tensorflow\lib\site-packages\tensorflow\python\compat\v2_compat.py:107: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
+
 
 
 ```python
@@ -462,10 +466,10 @@ print(y_train[0])
     (60000, 28, 28)
     (10000, 28, 28)
     5
-    
 
 
-    
+
+
 ![png](output_31_1.png)
     
 
@@ -501,7 +505,7 @@ print(y_train[0])
 ```
 
     [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
-    
+
 
 
 ```python
@@ -516,7 +520,7 @@ print(x_test.shape)
 
     (60000, 10)
     (10000, 784)
-    
+
 
 
 ```python
@@ -681,10 +685,10 @@ plt.show()
     iter 97 :Testing Accuracy is 0.9204000234603882
     iter 98 :Testing Accuracy is 0.9225000143051147
     iter 99 :Testing Accuracy is 0.9189000129699707
-    
 
 
-    
+
+
 ![png](output_36_1.png)
     
 
@@ -979,10 +983,10 @@ plt.show()
     iter 28 :Testing Accuracy is 0.8959000110626221.Training Accuracy is 0.8912333250045776
     iter 29 :Testing Accuracy is 0.8962000012397766.Training Accuracy is 0.8928666710853577
     iter 30 :Testing Accuracy is 0.8973000049591064.Training Accuracy is 0.8945333361625671
-    
 
 
-    
+
+
 ![png](output_48_1.png)
     
 
@@ -1245,7 +1249,7 @@ plt.show()
     iter 31 :Testing Accuracy is 0.8420000076293945.Training Accuracy is 0.8336499929428101
     iter 32 :Testing Accuracy is 0.8409000039100647.Training Accuracy is 0.8375833630561829
     iter 33 :Testing Accuracy is 0.849399983882904.Training Accuracy is 0.8405666947364807
-    
+
 
 
 ```python
@@ -1469,10 +1473,10 @@ plt.show()
     iter 97 :Testing Accuracy is 0.9505000114440918.Training Accuracy is 0.9681166410446167, Learning Rate = 6.905414011271205e-06
     iter 98 :Testing Accuracy is 0.9505000114440918.Training Accuracy is 0.9681666493415833, Learning Rate = 6.560142992384499e-06
     iter 99 :Testing Accuracy is 0.9503999948501587.Training Accuracy is 0.9681833386421204, Learning Rate = 6.232136001926847e-06
-    
 
 
-    
+
+
 ![png](output_55_1.png)
     
 
@@ -1484,7 +1488,7 @@ print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 ```
 
     Num GPUs Available:  1
-    
+
 
 # TensorBoard
 
@@ -1501,7 +1505,7 @@ from tqdm import tqdm
     WARNING:tensorflow:From D:\DEV\ANACONDA\envs\tensorflow\lib\site-packages\tensorflow\python\compat\v2_compat.py:107: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
+
 
 
 ```python
@@ -1618,10 +1622,10 @@ plt.show()
     iter 7 :Testing Accuracy is 0.8906000256538391
     iter 8 :Testing Accuracy is 0.8913999795913696
     iter 9 :Testing Accuracy is 0.8978999853134155
-    
 
 
-    
+
+
 ![png](output_59_1.png)
     
 
@@ -1670,7 +1674,7 @@ from tqdm import tqdm
     WARNING:tensorflow:From D:\DEV\ANACONDA\envs\tensorflow\lib\site-packages\tensorflow\python\compat\v2_compat.py:107: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
+
 
 
 ```python
@@ -1831,8 +1835,9 @@ plt.show()
     
     Device mapping:
     /job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
-    
-    
+
+
+​    
 
 # RNN (Recurrent Neural Network)
 
