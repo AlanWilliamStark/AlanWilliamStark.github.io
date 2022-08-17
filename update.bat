@@ -1,3 +1,3 @@
 git add .
-git commit -m “daily commit"
+git commit -m 'dailyUpdate'
 git push origin main
